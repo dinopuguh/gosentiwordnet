@@ -1,4 +1,4 @@
-package gosentiwordnet
+package go-sentiwordnet
 
 import (
 	"bufio"
@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/dinopuguh/gosentiwordnet/data"
-	"github.com/dinopuguh/gosentiwordnet/helpers"
+	"github.com/dinopuguh/go-sentiwordnet/data"
+	"github.com/dinopuguh/go-sentiwordnet/helpers"
 )
 
 const sentiWordnetAssetName = "rawdata/SentiWordNet_3.0.0.txt"

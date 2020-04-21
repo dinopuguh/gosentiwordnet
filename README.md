@@ -1,1 +1,1 @@
-gosentiwordnet
+go-sentiwordnet
