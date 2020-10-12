@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	goswn "github.com/dinopuguh/gosentiwordnet"
+	goswn "github.com/dinopuguh/gosentiwordnet/v2"
 )
 
 // Token represent the required parameter for using gosentiwordnet

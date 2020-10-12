@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/dinopuguh/gosentiwordnet/data"
-	"github.com/dinopuguh/gosentiwordnet/helpers"
+	"github.com/dinopuguh/gosentiwordnet/v2/data"
+	"github.com/dinopuguh/gosentiwordnet/v2/helpers"
 )
 
 const sentiWordnetAssetName = "rawdata/SentiWordNet_3.0.0.txt"
