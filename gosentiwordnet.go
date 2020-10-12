@@ -13,10 +13,13 @@ import (
 
 const sentiWordnetAssetName = "rawdata/SentiWordNet_3.0.0.txt"
 
+// SentimentAnalyzer represent the sentiment analyzer with sentiwordnet lexicon
 type SentimentAnalyzer struct {
 	Lexicon map[string]Sentiment
 }
 
+// Sentiment reprensent sentiment score for each word
+// containing positive, negative and objective
 type Sentiment struct {
 	Positive  float64
 	Negative  float64
@@ -56,13 +59,12 @@ func (sa *SentimentAnalyzer) generateLexicon() {
 
 		line++
 	}
-
-	if err := scanner.Err(); err != nil {
-		log.Fatal(err.Error())
-	}
 }
 
-func (sa *SentimentAnalyzer) GetSentimentScore(word string, posTag string, usage string) (bool, Sentiment) {
+// GetSentimentScore count the sentiment score of word based on POS tag and the word usage.
+// POS tag: part-of-speech tag of word
+// Word usage: 1 for most common usage and a higher number would indicate lesser common usages
+func (sa *SentimentAnalyzer) GetSentimentScore(word string, posTag string, usage string) (Sentiment, bool) {
 	var result Sentiment
 
 	posTag = "(" + posTag + ")"
@@ -78,10 +80,11 @@ func (sa *SentimentAnalyzer) GetSentimentScore(word string, posTag string, usage
 		}
 	}
 
-	return match, result
+	return result, match
 }
 
-func NewGoSentiwordnet() *SentimentAnalyzer {
+// New generate the sentiment analyzer with sentiwordnet lexicon
+func New() *SentimentAnalyzer {
 	var sa SentimentAnalyzer
 
 	sa.generateLexicon()
