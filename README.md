@@ -1,5 +1,7 @@
 # 💬 GoSentiwordnet
 
+[![Build Status](https://travis-ci.com/dinopuguh/gosentiwordnet.svg?branch=master)](https://travis-ci.com/dinopuguh/gosentiwordnet) [![Go Report Card](https://goreportcard.com/badge/github.com/dinopuguh/gosentiwordnet)](https://goreportcard.com/report/github.com/dinopuguh/gosentiwordnet) [![codecov](https://codecov.io/gh/dinopuguh/gosentiwordnet/branch/master/graph/badge.svg)](https://codecov.io/gh/dinopuguh/gosentiwordnet)  
+
 Sentiment analyzer using [sentiwordnet](https://github.com/aesuli/SentiWordNet) lexicon in Go. This library produce sentiment score for each word, including positive, negative, and objective score. 
 
 ## ⚙ Installation
