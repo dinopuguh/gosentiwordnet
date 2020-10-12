@@ -17,9 +17,9 @@ func main() {
 	sa := goswn.New()
 
 	tokens := []Token{
-		Token{Word: "love", PosTag: "v", Usage: "2"},
-		Token{Word: "neat", PosTag: "a", Usage: "4"},
-		Token{Word: "overacting", PosTag: "n", Usage: "1"},
+		{Word: "love", PosTag: "v", Usage: "2"},
+		{Word: "neat", PosTag: "a", Usage: "4"},
+		{Word: "overacting", PosTag: "n", Usage: "1"},
 	}
 
 	for _, token := range tokens {
