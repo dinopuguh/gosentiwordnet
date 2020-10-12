@@ -12,7 +12,7 @@ First of all, [download](https://golang.org/dl/) and install Go `1.14` or higher
 Install this library using the [`go get`](https://golang.org/cmd/go/#hdr-Add_dependencies_to_current_module_and_install_them) command:
 
 ```bash
-$ go get github.com/dinopuguh/gosentiwordnet
+$ go get github.com/dinopuguh/gosentiwordnet/v2
 ```
 
 ## ⚡ Quickstart
@@ -23,7 +23,7 @@ package main
 import (
     "fmt"
 
-    goswn "github.com/dinopuguh/gosentiwordnet"
+    goswn "github.com/dinopuguh/gosentiwordnet/v2"
 )
 
 func main() {
