@@ -3,7 +3,7 @@ package gosentiwordnet_test
 import (
 	"testing"
 
-	"github.com/dinopuguh/gosentiwordnet"
+	"github.com/dinopuguh/gosentiwordnet/v2"
 	"github.com/stretchr/testify/assert"
 )
 
