@@ -1,4 +1,4 @@
-name: golang-lint
+name: golang lint
 
 on:
   push:
