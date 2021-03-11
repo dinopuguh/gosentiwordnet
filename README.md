@@ -1,7 +1,7 @@
 # 💬 GoSentiwordnet
 
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/dinopuguh/gosentiwordnet/v2)](https://pkg.go.dev/github.com/dinopuguh/gosentiwordnet/v2)
-[![Build Status](https://travis-ci.com/dinopuguh/gosentiwordnet.svg?branch=master)](https://travis-ci.com/dinopuguh/gosentiwordnet) 
+[![Unit Test Status](https://github.com/dinopuguh/gosentiwordnet/actions/workflows/unit-test.yml/badge.svg?branch=master)](https://github.com/dinopuguh/gosentiwordnet/actions) 
 [![Go Report Card](https://goreportcard.com/badge/github.com/dinopuguh/gosentiwordnet)](https://goreportcard.com/report/github.com/dinopuguh/gosentiwordnet)
 [![codecov](https://codecov.io/gh/dinopuguh/gosentiwordnet/branch/master/graph/badge.svg)](https://codecov.io/gh/dinopuguh/gosentiwordnet)
 

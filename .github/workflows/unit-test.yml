@@ -1,0 +1,28 @@
+name: unit test
+
+on:
+  push:
+    tags:
+      - v*
+    branches:
+      - master
+  pull_request:
+jobs:
+  unit-test:
+    strategy:
+      matrix: 
+        go-version: [1.14.x, 1.15.x, 1.16.x]
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: install-go
+        uses: actions/setup-go@v2
+        with:
+          go-version: ${{ matrix.go-version }} 
+      - uses: actions/checkout@v2
+      - name: unit-test
+        run: go test -v -coverprofile=coverage.txt -covermode=count
+      - name: push-to-codecov
+        run: bash <(curl -s https://codecov.io/bash)
+      - name: remove-coverage-file
+        run: rm -rf coverage.txt
