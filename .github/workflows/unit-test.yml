@@ -21,4 +21,8 @@ jobs:
           go-version: ${{ matrix.go-version }} 
       - uses: actions/checkout@v2
       - name: unit-test
-        run: go test ./...
+        run: go test -v -coverprofile=coverage.txt -covermode=count
+      - name: push-to-codecov
+        run: bash <(curl -s https://codecov.io/bash)
+      - name: remove-coverage-file
+        run: rm -rf coverage.txt
